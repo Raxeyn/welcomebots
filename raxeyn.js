@@ -25,14 +25,14 @@ for (let index = 0; index < ayarlar.raxeynwelcometokenler.length; index++) {
         if (cur.channel && (cur.channel.id === ayarlar.welcomeseskanalları[index])) {
             if (cur.channelID === prev.channelID) return;
             if (raxeyn.includes(cur.member.id) && (cur.member.roles.highest.rawPosition < cur.guild.roles.cache.get(ayarlar.enaltyetkili).rawPosition)) {
-                ses = await raxeyncik.play('./welcome.mp3');
+                ses = await raxeyncik.play('https://www.youtube.com/watch?v=x5YFAPnGmX8&t=91s&pp=ygUZZGlzY29yZCBzZXNsaSBob8WfZ2VsZGluIA%3D%3D');
                 return;
             }
             if ((cur.member.roles.highest.rawPosition < cur.guild.roles.cache.get(ayarlar.enaltyetkili).rawPosition)) {
-                ses = await raxeyncik.play('./welcome.mp3');
+                ses = await raxeyncik.play('https://www.youtube.com/watch?v=x5YFAPnGmX8&t=91s&pp=ygUZZGlzY29yZCBzZXNsaSBob8WfZ2VsZGluIA%3D%3D');
                 raxeyn.push(cur.member.user.id);
             } else if (cur.member.roles.highest.rawPosition > cur.guild.roles.cache.get(ayarlar.enaltyetkili).rawPosition) {
-                ses = await raxeyncik.play('./welcome.mp3');
+                ses = await raxeyncik.play('https://www.youtube.com/watch?v=x5YFAPnGmX8&t=91s&pp=ygUZZGlzY29yZCBzZXNsaSBob8WfZ2VsZGluIA%3D%3D');
                 raxeyn.push(cur.member.user.id);
             }
         }
